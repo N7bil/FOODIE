@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    height:90px;
+    border-block-end : .5px solid hsl(23, 61%, 86%);
+    z-index: 10;
+}
+.logo{
+    margin: 35px 0 0 350px;
+}
+.logo .titel0{   
+    font-size: 28px;
+    letter-spacing: -2px;
+}
+.link ul{
+    list-style: none;
+    margin: 35px 350px 0 0;
+}
+.link li{
+    display: inline-block;
+    padding-right: 30px;
+}
+.link li a{
+    font-size: 18px;
+    text-decoration:none;
+    color: rgb(241, 214, 198);
+}
+.link ul li a::after{
+    width: 0;
+}
+.link ul li a.activ::after,.link ul li a::after{
+    content: "";
+    height: 2px;
+    display: block;
+    transition: width .5s;
+}
+.home{
+    height: 770px;
+    overflow: hidden;
+    background-image: url(../images/hero-img.jpg);
+}
+.overlay-home{
+    background-color:rgba(0, 0, 0,.2) ;
+}
+.home-content,.leyr-info{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.prg1{
+    font-family: "Shadows Into Light";
+    font-weight: 400;
+    font-size: 35px;
+}
+.titel1{
+    margin-bottom: 8px;
+    color: rgb(241, 214, 198);
+    font-weight: 500;
+    font-size: 55px;
+}
+.prg2{
+    margin-bottom: 20px;
+    color: rgb(241, 214, 198);
+}
+.btn-1{
+    width: 160px;
+    height: 40px;
+    border: none;
+}
+.btn-1 :hover{
+    background-color:black;
+    transition: .5s;
+}
+/* ////////////////// */
+.container-review{
+    height: 650px;
+    margin-left: 370px;
+}
+.about-review{
+    height: 500px;
+    width: 500px;
+    margin: 120px 0 0 330px;
+}
+.empty{
+    width: 100px;
+    height: 5px;
+    margin: auto;
+}
+.customer-left,.customer-right{  
+    margin-top: 300px;
+}
+.customer-left .span-9,.customer-center .span-9,.customer-right .span-9{
+    margin: 10px 0 0 140px;
+}
+.span-10{
+    display: inline-block;
+}
+.fa1{
+    margin: 15px 0 0 30px;
+}
+.customer-center{  
+    margin: 300px 10px 0 8px;
+}
+.customer-right img,.customer-center img,.customer-left img{
+    width: 85px;
+    border-radius: 50%;
+    margin: 40px 0 0 40px;
+}
+.span-10{
+    display: inline-block;
+}
+.customer-right h5,.customer-center h5,.customer-left h5{
+    margin: -70px 0 5px 140px;
+}
+.customer-right p,.customer-center p,.customer-left p{
+    margin: 50px 0 0 35px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.customer-left,.customer-center,.customer-right{
+    width: 387px;
+    height: 300px;
+    border:1px solid #e8e8e8;
+}
+/* //////////////////////// */
+.about-container{
+    height: 1500px;
+   background-color:  rgb(249, 246, 240);
+}
+.about{
+    margin: auto;
+}
+.about-food{
+    height: 500px;
+    width: 500px;
+    margin: 120px 0 0 330px;
+}
+.span-2,.span-6,.about-post .span-10,.about-review .span-2{
+    color: rgb(244, 47, 37);
+}
+.btn-0{
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(237, 237, 237);
+    background-color: #fff;
+    text-transform: capitalize;
+}
+.btn-0 a{
+    text-decoration: none;
+    padding-top: 5px;
+    display: block;
+    color: black;
+    font-size: 17px;
+}
+.btn-3{
+    background-color:rgb(255, 157, 46);
+}
+.btn-0 :hover{
+    background-color: rgb(255, 157, 46);
+    transition: .5s;
+}
+.about-menu{
+    height: 1000px;
+    margin-top: 340px;
+}
+.about-menu-1,.about-menu-2,.about-menu-3,.about-menu-4,.about-menu-5,.about-menu-6{
+    width: 375px;
+    height: 490px;
+    border:1px solid #e8e8e8;
+}
+.about-leyr{
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+.about-menu-leyr:hover .about-leyr{
+    visibility: visible;
+    opacity: 1;
+}
+.leyr-info{
+    width: 60%;
+}
+.leyr-info h3{
+    margin-bottom: 10px;
+}
+.leyr-info h3,.leyr-info i{
+    opacity: 0; 
+    transform: opacity .5s;
+    transition-delay: .2s;
+}
+.about-menu-leyr:hover .leyr-info h3,.about-menu-leyr:hover .leyr-info i{
+    top: 0;
+    opacity: 1;
+}
+.about-menu-2{
+    margin: 0 27px;
+}
+.about-menu-4,.about-menu-6{
+    margin-top: 27px;
+}
+.about-menu-5{
+    margin: 27px 27px 0;
+}
+.span-4{
+    width: 50px;
+    height: 20px;
+    display: block;
+    margin: 30px 0 0 40px;
+    font-weight: 10px;
+    background-color: rgb(244, 47, 37);
+}
+.img-5 img{
+    width: 260px;
+    margin: 15px 0 0 54px;
+}
+.about-reat{
+    margin-left: 30px;
+}
+.span-5{
+    display:inline-block ;
+    font-size: 19px;
+    margin: 15px 12px 10px 0;
+}
+.fa {
+    margin-left: 2px;
+    color: rgb(255, 157, 46);
+}
+.titel2 {    
+    font-size: 22px;
+    margin: 10px 0 ;
+}
+.span-6{
+    margin-top: 50px;
+}
+.span-7{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.span-8{
+    margin-left: 5px;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+/* ////////////////////// */
+.container-categ{
+    height: 650px;
+    margin-left: 370px;
+}
+.about-categ{
+    height: 500px;
+    width: 500px;
+    margin: 50px 0 0 330px;
+}
+.titel5{
+    font-size: 40px;
+    margin: 10px 0 5px ;
+}
+.prg5{
+    margin-bottom: 20px;
+}
+.category-height{
+    margin-top: 230px;
+}
+.categ1,.categ2,.categ3,.categ4,.categ5,.categ6{
+    width: 32%;
+    height: 150px;
+    border:1px solid #e8e8e8;
+}
+.categ2,.categ5{
+    margin: 0 22px
+}
+.categ3,.categ2{
+    margin-bottom: 30px;
+}
+.categ1 i,.categ2 i,.categ3 i,.categ4 i,.categ5 i,.categ6 i{
+    margin: 20px 25px;
+    font-size: 30px;
+}
+.categ1 h3,.categ2 h3,.categ3 h3,.categ4 h3,.categ5 h3,.categ6 h3{
+    display: inline;
+    font-size: 25px;
+}
+.categ1 p,.categ2 p,.categ3 p,.categ4 p,.categ5 p,.categ6 p{
+    margin:0 20px 0 85px ;
+}
+.categ1 span,.categ2 span,.categ3 span,.categ4 span,.categ5 span,.categ6 span{
+   margin-left: 75px;
+}
+/* /////////////////////// */
+.ofer{
+    height: 750px;
+    background-color:  rgb(249, 246, 240);
+}
+.container-oofer{
+    height: 650px;
+    margin-left: 370px;
+    margin-top: 50px;
+}
+.ofer-about{
+    margin-bottom: -80px;
+}
+.img-ofer,.about-ofer{
+    width: 50%;
+    margin-top: 100px;
+}
+.img-ofer2{
+    height: 200px;
+    margin: -10px 0 0 -400px;
+}
+.titel4{
+    font-size: 50px;
+}
+.ofer-item{
+    list-style: none;
+}
+.ofer-item li{
+    font-size: 17px;
+}
+.ofer-item li i{
+    margin: 0 10px 15px 0;
+    border: 1px solid rgb(255, 141, 41); 
+    border-radius: 50%;
+    padding: 2px;
+}
+.btn-2{
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+.btn-2 :hover,.footer-left li:hover{
+    background-color:black;
+    transition:.5s;
+}
+/* ////////////////// */
+.container-kind{
+    height: 650px;
+    margin: 110px 0 0 370px;
+}
+.kind-food,.kind-food1{
+    margin-right: 23px;
+}
+.kind-food,.kind-food2,.kind-food1{
+    width: 32%;
+    height: 420px;
+    border:1px solid #e8e8e8;
+}
+.btt-effect h3{
+    margin: 40px 0 15px;
+}
+.pric{
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(255, 141, 41);
+    border-radius: 50%;
+    margin: auto;
+}
+.pric h2{
+    margin-top: 24px;
+    font-size: 40px;
+}
+.prg3{
+    margin: 15px 0 20px;
+    line-height: 1.5;
+}
+.btn-20{
+    width: 150px;
+    padding: 10px;
+    background: none;
+    border: 2px solid rgb(255, 141, 41);
+}
+.btt-effect::after{
+    z-index: -1;
+}
+/* //////////////////// */
+.blog{
+    overflow: hidden;
+    height: 300px;
+    background: url(../images/hero-bg.jpg) fixed ;
+}
+.overlay{
+    background-color:rgba(0, 0, 0,.4) ;
+}
+.overlay,.overlay-home{
+    top: 0;
+    left: 0;
+}
+.number-items{
+    overflow: hidden;
+}
+.number-item{
+    width: 25%;
+}
+.number-item .icon{
+    margin-top:90px;
+    margin-bottom: 15px;
+}
+.number-item-titel{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* //////////////// */
+.team-content{
+    overflow: hidden;
+}
+.team-content{
+    height: 750px;
+    background-color:  rgb(249, 246, 240);
+}
+.team-container{
+    height: 700px;
+    margin: 110px 0 0 370px;
+}
+.team-about{
+    margin-top: -40px;
+}
+.team-item{
+    width: 31%;
+    height: 450px;
+    background: #e8e8e8;
+    padding: 40px 10px;
+}
+.team-item .team-img{
+    width: 90%;
+    margin: auto;
+}
+.team-overlay{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0,.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    transition: .5s;
+}
+.team-item .team-img img{
+    margin: auto;
+}
+.team-item .team-info-titel{
+    color: #222;
+    margin: 10px 0;
+    transition: color .5s;
+}
+.team-item .team-info-text{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-item.tttb-effect{
+    z-index: 1;
+}
+.tttb-effect:after{
+    content: "";
+    height: 0;
+    background:#333;
+    top: 0;
+    left: 0;
+    transition:height 1s;
+    z-index: -1;
+}
+.team-item.mg{
+    margin: 0 41px;
+}
+/* /////////////////////////////// */
+.container-post{
+    height: 780px;
+    margin: 50px 0 0 370px;
+}
+.about-post{
+    width: 500px;
+    margin: 10px 0 0 330px;
+}
+.about-post .titel8{
+    font-size: 40px;
+    margin: 10px 0 15px;
+}
+.about-post .prg7{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.post-food{
+    height: 500px;
+    margin-top: 40px;
+}
+.post-left,.post-center,.post-right{
+    width: 32%;
+    height: 500px;
+    background-color: white;
+    border:1px solid #e8e8e8;
+}
+.ttp-effect::after,.btt-effect::after{
+    content: "";
+    height: 0;
+    top: 0;
+    left: 0;
+    background:#333;
+    transition: 1s;
+}
+.post-left:hover:after,.post-center:hover:after,.post-right:hover:after{
+    opacity: .7;
+}
+.post-center{
+    margin-left: 400px;
+}
+.post-right{
+    margin-top: -500px;
+}
+.post-top{
+    height: 50%;
+}
+.span-13{
+    margin: 0 5px  15px;
+}
+.fa4{
+    margin-right: 7px;
+}
+.post-bottom a{
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 12px;
+}
+.post-bottom{
+    font-weight: 650;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 10px 0 0 25px;
+}
+.post-bottom p{
+    margin: 10px 0;
+}
+.a1{
+   text-transform: uppercase;
+}
+/* ////////////// */
+.footer{
+    height: 480px;
+    background-color:  rgb(249, 246, 240);
+}
+.container-1{
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    background-image: url(../images/footer-illustration.png);
+    background-size: cover;
+} 
+.footer-container{
+    height: 300px;
+    margin: 100px 0 0 270px;
+}
+.footer-left{
+    margin-top: 65px;
+    width: 25%;
+    height: 180px;
+}
+.center-left{
+    margin: 65px 0 0 25px;
+    width: 23%;
+    height: 180px;
+}
+.center-right{
+    margin: 65px 0 0 600px;
+    width: 23%;
+    height: 180px
+}
+.footer-right{
+    width: 25%;
+    height: 345px;
+    background-color: white;
+    margin-top: -345px;
+    border: 1px solid gainsboro;
+}
+.footer-left h3{
+    font-weight: 700;
+    font-size: 32px;
+}
+.footer-left p,.center-left p,.center-right p{
+    margin: 10px 0 15px;
+}
+.footer-left p,.center-left p,.center-right p,.post-bottom p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.footer-left li{
+    list-style: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+.center-right h3,.center-left h3{
+    font-size: 18px;
+}
+form{
+    margin-top: 40px;
+}
+input{
+    width: 120px;
+    height: 35px;
+}
+.inp1,.inp3{
+    margin: 0 5px 15px 20px;
+}
+.inp5{
+    margin-left: 20px;
+}
+.btn-11{
+    margin: 10px 0 0 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+/* .............. */
+.span-6,.center-right h3,.center-left h3,.footer-left h3,.post-bottom,.post-bottom a,.about-post .titel8,.about-post .span-10,.bottom-titel h4,.right-titel h4,.right-titel span,.left-titel h4,.left-titel span,.banner-titel h4,.banner-titel span,.customer-right .span-9,.customer-left .span-9,.customer-center h5,.customer-center .span-9,.customer-left h5,.about-review .titel5,.about-review .span-2,.about-deliverey .titel4,.about-blog .titel4,.logo .titel0,.titel1,.link,.titel4,.titel5,.container-food h3,.categ1 h3,.categ2 h3,.categ3 h3,.categ4 h3,.categ5 h3,.categ6 h3,.btt-effect h3{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+.btn-11 a,.footer-left i,.btn-10 a,.bottom-titel p,.btn-9 a,.right-titel h4,.right-titel span,.btn-9 a,.left-titel h4,.left-titel span,.btn-8 a,.banner-titel p,.banner-titel span,.btn-2 a,.about-blog .titel4,.span-4,.ofer-item li i,.icon,.btn-1 a,.logo .titel0,.banner-titel h4,.bottom-titel h4,.team-item:hover .team-info-titel,.team-overlay a i,.kind-food:hover .pric,.kind-food1:hover .pric,.kind-food2:hover .pric{
+    color: white;
+}
+.btn-10 a,.btn-9 a,.btn-8 a,.btn-2 a,.btn-1 a{
+    text-decoration: none;
+    display: block;
+    padding: 9px;
+}
+.prg4,.prg12{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+.btn-10 a,.btn-9 a,.btn-8 a,.btn-2 a,.btn-1 a,.prg5,.span-6,.customer-right h5,.customer-center h5,.customer-left h5,.prg2{
+    font-size: 20px;
+}
+.center-right p,.center-left p,.footer-left p,.post-bottom p,.about-post .prg7,.prg5,.customer-right p,.customer-center p,.customer-left p,.post-bottom p,.prg4,.prg12,.prg3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.categ1:after,.categ2:after,.categ3:after,.categ4:after,.categ5:after,.categ6:after,.customer-left:after,.customer-right:after,.customer-center:after{
+    content: "";
+    width: 0;
+    height: 0;
+    background:#333;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.categ1:hover:after,.categ2:hover:after,.categ3:hover:after,.categ4:hover:after,.categ5:hover:after,.categ6:hover:after,.customer-left:hover:after,.customer-right:hover:after,.customer-center:hover:after,.post-left:hover:after,.post-center:hover:after,.post-right:hover:after,.tttb-effect:hover:after,.overlay,.overlay-home,.kind-food:hover:after,.kind-food1:hover:after,.kind-food2:hover:after,.about-leyr,.btn-10 a,.btn-9 a,.btn-8 a,.btn-2 a,.btn-1 a,.btn-0 a{
+    height: 100%;
+}
+.customer-left:hover  h5,.customer-left:hover .span-9,.customer-center:hover  h5,.customer-center:hover .span-9,.customer-right:hover  h5,.customer-right:hover .span-9,.categ1:hover,.categ2:hover,.categ3:hover,.categ4:hover,.categ5:hover,.categ6:hover{
+    color: #fff;
+    transition: color 1s;
+}
+.customer-right h5,.customer-center h5,.customer-left h5,.post-bottom a,.post-bottom,.fa6,.footer-left h3,.center-right h3,.center-left h3,.fa6{
+    color: rgb(13, 18, 22);
+}
+.footer-left h3 span,.fa6 :hover,.about-post .span-11,.number-item-text,.number-item-titel,.number-item .icon,.kind-food:hover h3,.kind-food1:hover h3,.kind-food2:hover h3,.btn-20,.span-1,.span-7,.leyr-info i,.leyr-info h3,.span-3,.about-review .span-3,.prg1,.link li a:hover,.span-0{
+    color: rgb(255, 141, 41);
+}
+.center-left,.footer-left,.post-left,.team-item,.number-item,.kind-food,.kind-food2,.kind-food1,.img-ofer,.categ1,.categ2,.categ3,.categ4,.categ5,.categ6,.about-menu-1,.about-menu-2,.about-menu-3,.about-menu-4,.about-menu-5,.about-menu-6,.logo,.home-left,.customer-left,.customer-right,.customer-center{
+    float: left;
+}
+.footer-right,.post-right,.team-item.mg2,.kind-food2,.about-ofer,.categ6,.categ3,.customer-right,.link ul{
+    float: right;
+}
+.footer-left p,.center-left p,.center-right p,.post-bottom p,.about-post .prg7,.team-item .team-info-text,.prg3,.prg4,.prg5,.span-8,.span-5,.customer-right p,.customer-center p,.customer-left p,.customer-right .span-9,.customer-center .span-9,.customer-left .span-9,.about-review .prg5{
+    color: rgb(120, 120, 120);
+}
+.btn-11,.footer-left li,.team-overlay a,.btn-2,.empty,.btn-1,.link ul li a.activ::after,.link ul li a::after,.ofer-item li i{
+    background-color: rgb(255, 141, 41);
+}
+.footer,.post-top img,.post-top,.post-left:hover:after,.post-center:hover:after,.post-right:hover:after,.post-food,.tttb-effect:after,.team-item .team-img img,.team-content,.overlay,.overlay-home,.blog,.ofer,.category-height,.about-leyr,.about-menu,.btn-0 a,.about-container,.link ul li a:hover:after,.link ul li a.activ::after,.nav,.btn-10 a,.btn-9 a,.btn-8 a,.btn-2 a,.btn-1 a,.categ1:hover:after,.categ2:hover:after,.categ3:hover:after,.categ4:hover:after,.categ5:hover:after,.categ6:hover:after,.customer-left:hover:after,.customer-right:hover:after,.customer-center:hover:after,.ttp-effect::after,.btt-effect::after{
+    width: 100%;
+}
+.ttp-effect,.btt-effect,.tttb-effect,.team-item .team-img,.blog,.img-ofer1,.ofer,.categ1,.categ2,.categ3,.categ4,.categ5,.categ6,.container-categ,.about-menu-1,.about-menu-2,.about-menu-3,.about-menu-4,.about-menu-5,.about-menu-6,.about,.home,.customer-left,.customer-right,.customer-center{
+    position: relative;
+}
+.footer-container,.ttp-effect::after,.btt-effect::after,.tttb-effect:after,.team-overlay,.overlay,.overlay-home,.img-ofer2,.container-oofer,.category-height,.about-categ,.leyr-info,.about-leyr,.about-menu,.about-food,.about-review,.home-content,.categ1:after,.categ2:after,.categ3:after,.categ4:after,.categ5:after,.categ6:after,.customer-left:after,.customer-right:after,.customer-center:after{
+    position: absolute;
+}
+.footer-left li,.about-post,.team-about,.number-item,.about-kind,.ofer-about,.about-categ,.span-4,.leyr-info,.about-food,.about-review,.home-content,.team-item,.kind-food,.kind-food2,.kind-food1{
+    text-align: center;
+}
+.footer-container,.container-post,.team-container,.container-kind,.container-oofer,.container-categ,.about,.container-review{
+    width:62%;
+}
+.center-right h3,.center-left h3,.about-post .titel8,.titel4,.titel5,.span-8,.span-6,.titel2 ,.span-5,.customer-center h5,.customer-left h5,.logo .titel0{
+    font-weight: 500;
+}
